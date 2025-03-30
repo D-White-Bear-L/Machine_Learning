@@ -629,6 +629,12 @@ if __name__ == "__main__":
     # 特征名称
     feature_names = ["天气", "温度", "湿度", "风力"]  # 定义特征名称
     
+    # 创建输出文件夹
+    import os
+    output_folder = r"c:\programme\data_science\artificial intelligence\homwork_ex\hw\hw02\design_output"
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+    
     # 创建并训练ID3决策树
     tree = ID3DecisionTree(max_depth=3)  # 创建决策树，最大深度为3
     tree.fit(X, y, feature_names)  # 训练决策树
@@ -643,7 +649,7 @@ if __name__ == "__main__":
     print("\n预测结果:", predictions)  # 打印预测结果
     
     # 可视化决策树
-    output_path = r"c:\programme\data_science\artificial intelligence\homwork_ex\hw\hw02\id3_tree"
+    output_path = os.path.join(output_folder, "decision_tree")
     tree.visualize(output_path)
     
     # 添加提示信息
