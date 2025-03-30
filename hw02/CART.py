@@ -366,10 +366,14 @@ class CARTDecisionTree:
         
         # 在条形上方显示具体数值
         for i, (feature, importance) in enumerate(sorted_importances.items()):
-            plt.text(i, importance + 0.005, f'{importance:.3f}', ha='center')
+            plt.text(i, importance + 0.01, f'{importance:.3f}', ha='center')
+        
+        # 设置y轴范围，确保数值标签可见
+        plt.ylim(0, max(sorted_importances.values()) * 1.1)
         
         if output_file:
-            plt.savefig(output_file)
+            plt.savefig(output_file, dpi=300, bbox_inches='tight')
+            print(f"特征重要性图已保存为: {output_file}")
         
         plt.show()
         
@@ -430,7 +434,7 @@ if __name__ == "__main__":
     # 特征名称
     feature_names = ["age", "income", "student", "credit_rating"]
     
-    # 创建输出文件夹
+    # 创建输出文件夹 - 使用与ID3相同的文件夹
     output_folder = r"c:\programme\data_science\artificial intelligence\homwork_ex\hw\hw02\cart_output"
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -444,17 +448,17 @@ if __name__ == "__main__":
     tree.print_tree()
     
     # 可视化决策树
-    output_path = os.path.join(output_folder, "decision_tree")
+    output_path = os.path.join(output_folder, "cart_decision_tree")
     tree.visualize_tree(output_path)
     print(f"\n决策树已保存为图片: {output_path}.png")
     
     # 使用matplotlib可视化决策树
-    matplotlib_output_path = os.path.join(output_folder, "decision_tree_matplotlib.png")
+    matplotlib_output_path = os.path.join(output_folder, "cart_decision_tree_matplotlib.png")
     tree.visualize_tree_matplotlib(matplotlib_output_path)
     print(f"\n使用matplotlib的决策树已保存为图片: {matplotlib_output_path}")
     
     # 绘制特征重要性图
-    importance_chart_path = os.path.join(output_folder, "feature_importance_chart.png")
+    importance_chart_path = os.path.join(output_folder, "cart_feature_importance_chart.png")
     tree.plot_feature_importance(X, y, importance_chart_path)
     print(f"特征重要性图已保存为: {importance_chart_path}")
     
