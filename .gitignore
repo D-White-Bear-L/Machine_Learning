@@ -172,3 +172,7 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+hw04/IMDB Dataset.csv
+hw04/imdb_enriched.csv
