@@ -1,0 +1,11 @@
+movieId,similarity,title,genres
+3114,0.5726012603197156,Toy Story 2 (1999),Adventure|Animation|Children|Comedy|Fantasy
+480,0.5656368040861567,Jurassic Park (1993),Action|Adventure|Sci-Fi|Thriller
+780,0.5642616935276658,Independence Day (a.k.a. ID4) (1996),Action|Adventure|Sci-Fi|Thriller
+260,0.5573881705799366,Star Wars: Episode IV - A New Hope (1977),Action|Adventure|Sci-Fi
+356,0.5470959079401738,Forrest Gump (1994),Comedy|Drama|Romance|War
+364,0.5411453494602333,"Lion King, The (1994)",Adventure|Animation|Children|Drama|Musical|IMAX
+1210,0.5410893047725842,Star Wars: Episode VI - Return of the Jedi (1983),Action|Adventure|Sci-Fi
+648,0.5389127705583577,Mission: Impossible (1996),Action|Adventure|Mystery|Thriller
+1265,0.534168762584344,Groundhog Day (1993),Comedy|Fantasy|Romance
+1270,0.5303813465217209,Back to the Future (1985),Adventure|Comedy|Sci-Fi

@@ -1,0 +1,11 @@
+movieId,predicted_rating,title,genres
+2858,3.4210526315789473,American Beauty (1999),Drama|Romance
+48516,3.3157894736842106,"Departed, The (2006)",Crime|Drama|Thriller
+2329,3.1578947368421053,American History X (1998),Crime|Drama
+1923,3.0789473684210527,There's Something About Mary (1998),Comedy|Romance
+7361,3.0526315789473686,Eternal Sunshine of the Spotless Mind (2004),Drama|Romance|Sci-Fi
+1704,3.026315789473684,Good Will Hunting (1997),Drama|Romance
+50872,3.026315789473684,Ratatouille (2007),Animation|Children|Drama
+63082,3.0,Slumdog Millionaire (2008),Crime|Drama|Romance
+54503,3.0,Superbad (2007),Comedy
+527,3.0,Schindler's List (1993),Drama|War
